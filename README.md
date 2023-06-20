@@ -6,7 +6,6 @@ This is a personal portfolio website built with React, showcasing the work, skil
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Technologies Used](#technologies-used)
 
 ## Features
@@ -24,11 +23,6 @@ This is a personal portfolio website built with React, showcasing the work, skil
     npm run develop
 
 ```
-
-## Usage
-
-below is a photo of the running app
-
 
 
 ## Technologies Used 
