@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div>
             <h2 className="content is-medium">Geologist, Artist and Full Stack Developer</h2>
-            <img className="my-pic" src='./imgages/profile-1-2.jpg' alt="goo"/> 
+            <img className="my-pic" src='./images/profile-1-2.jpg' alt="goo"/> 
             <p className="content is-italic mt-4">
                     An aspiring Geologist studying Full Stack Development to get a career in Web Development.
             </p>
