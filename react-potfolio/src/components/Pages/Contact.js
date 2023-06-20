@@ -1,45 +1,43 @@
 import React, { useState } from "react";
 import { useForm } from 'react-hook-form';
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from "../../utils/helpers"
 
 function Contact() {
-    const [handleSubmit] = useForm();
-    
-    const [formState, setFormState] = useState({ name: '', email: '', message:'' }); 
-    const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, message } = formState;
+  const { handleSubmit } = useForm();
+  
+  const [formState, setFormState] = useState({ name: '', email: '', message:'' }); 
+  const [errorMessage, setErrorMessage] = useState('');
+  const { name, email, message } = formState;
 
-    const handleChange = (event) => {
-        if (event.target.name === 'email') {
-            const isValid = validateEmail(event.target.value);
-            if(!isValid) {
-                setErrorMessage('Your Email is invalid.')
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!event.target.value.length) {
-                setErrorMessage(`A ${event.target.name} is required`);
-            } else {
-                setErrorMessage('')
-            }
-        }
-        if (!errorMessage) {
-            setFormState({ ...formState, [event.target.name]: event.target.value })
-            console.log('Handle Form', formState);
-        }
-    };
-
-    const handleFormSubmit = (data) => {
-      const jsonData = JSON.stringify(data);
-
-      console.log(jsonData);
+  const handleChange = (event) => {
+    if (event.target.name === 'email') {
+      const isValid = validateEmail(event.target.value);
+      if (!isValid) {
+        setErrorMessage('Your Email is invalid.');
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!event.target.value.length) {
+        setErrorMessage(`A ${event.target.name} is required`);
+      } else {
+        setErrorMessage('');
+      }
     }
+    if (!errorMessage) {
+      setFormState({ ...formState, [event.target.name]: event.target.value });
+      console.log('Handle Form', formState);
+    }
+  };
 
-    return (
- <div>
-      <p className="content is-medium">Contact Me</p>
-      <hr />
+  const handleFormSubmit = (data) => {
+    const jsonData = JSON.stringify(data);
+    console.log(jsonData);
+  };
+
+  return (
+    <div className="container is-fullhd">
+      <h2 className="content is-medium">Contact Me</h2>
       <form id="contact-form" onSubmit={handleSubmit(handleFormSubmit)}>
         <div className="field">
           <label className="label" htmlFor="name">Name</label>
@@ -61,7 +59,7 @@ function Contact() {
         <button className="button is-medium is-primary is-fullwidth" data-testid="button" type="submit">Submit</button>
       </form>
     </div>
-    );
+  );
 }
 
 export default Contact;

@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: 'Montserrat Alternates', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +12,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header {
+  background-color: #edf3f4;
+}
+
+.my-pic {
+	clip-path: circle();
+  width: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+main {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 30em;
+  margin-right: 30em;
+}
+
+.label {
+  text-align: left;
+}
+
+.navbar .navbar-brand > .navbar-item,
+.navbar .navbar-brand .navbar-link {
+  display: inline-block;
+}
+
+.navbar, .navbar-brand {
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: aliceblue;
+  
+}
+
+.li {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.p {
+  text-align: center;
+}
+
+div.navbar-brand {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+}
+
