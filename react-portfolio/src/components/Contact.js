@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from 'react-hook-form';
-import { validateEmail } from "../../utils/helpers"
+import { validateEmail } from "../utils/helpers"
 
 function Contact() {
   const { handleSubmit } = useForm();
