@@ -7,7 +7,7 @@ function Resume() {
   return (
     <div className="columns">
       <div className="column">
-        <p className="content is-medium">Résumé</p>
+        <p className="content is-medium">Resume</p>
         <hr />
 
         <a
@@ -18,13 +18,13 @@ function Resume() {
           <span className="icon">
             <i className="fas fa-download"></i>
           </span>
-          <span>Download My Resume</span>
+          <span className="bold">Download My Resume</span>
         </a>
       </div>
       <div className="column">
         <p className="content is-medium is-align-content-center">Skills</p>
         <hr />
-        <h3>Front-end Proficiencies</h3>
+        <h3 className="bold">Front-end Proficiencies</h3>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
@@ -35,7 +35,7 @@ function Resume() {
           <li>Bootstrap</li>
         </ul>
         <hr/>
-        <h3>Back-end Proficiencies</h3>
+        <h3 className="bold">Back-end Proficiencies</h3>
         <ul>
           <li>Node</li>
           <li>APIs</li>
