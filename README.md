@@ -32,4 +32,11 @@ This is a personal portfolio website built with React, showcasing the work, skil
     -HTML
     -CSS
     -Bulma (for html formatting)
+    
+## Usage
+Below is screenshot of deployed app
+![Screenshot 2023-06-20 at 6 03 49 PM](https://github.com/sethleininger/React-Portfolio/assets/122936654/6c73be5e-ae35-4760-b401-f6201b51ddfe)
+
+https://sethleininger.github.io/React-Portfolio/
+
 
