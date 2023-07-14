@@ -1,7 +1,7 @@
 import React from "react";
 import Project from './Project';
 
-import dopeBox from "../../public/./images/dopebox.png";
+
 
 
 
@@ -30,7 +30,7 @@ const projects = [
     title: "Dopamine Box",
     languages: "MERN-stack",
     packages: "none",
-    image: dopeBox,
+    image: "./images/dopebox.png",
     description: "An app to keep track of goals through positive reinforcement.",
     repo: "https://github.com/sethleininger/dopamine-box",
     live: "https://dopamine-box-178888939ab3.herokuapp.com/",
