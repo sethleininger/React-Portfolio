@@ -1,6 +1,10 @@
 import React from "react";
 import Project from './Project';
 
+import dopeBox from "../../public/./images/dopebox.png";
+
+
+
 const projects = [
     {
         // example of how to set of prop values
@@ -21,6 +25,15 @@ const projects = [
     description: "A basic app that allows you to see the weather for a specific searched or saved city.",
     repo: "https://github.com/sethleininger/Weather-Forecast-App",
     live: "https://sethleininger.github.io/Weather-Forecast-App/",
+  },
+    { id: 2,
+    title: "Dopamine Box",
+    languages: "MERN-stack",
+    packages: "none",
+    image: dopeBox,
+    description: "An app to keep track of goals through positive reinforcement.",
+    repo: "https://github.com/sethleininger/dopamine-box",
+    live: "https://dopamine-box-178888939ab3.herokuapp.com/",
   },
 ];
 
